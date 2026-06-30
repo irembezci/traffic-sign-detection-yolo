@@ -1,4 +1,4 @@
-# 🚦 Traffic Sign Detection with YOLOv8
+# Traffic Sign Detection with YOLOv8
 
 This project demonstrates how to train a custom **YOLOv8 Nano** object detection model to recognize traffic signs using a custom dataset. Instead of training a neural network from scratch, a pre-trained YOLOv8 model was fine-tuned using transfer learning, allowing the model to learn new traffic sign classes efficiently.
 
