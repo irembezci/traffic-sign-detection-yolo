@@ -66,7 +66,7 @@ This project uses the **Traffic Sign Detection YOLOv8** dataset downloaded from 
 
 https://universe.roboflow.com/university-km5u7/traffic-sign-detection-yolov8-awuus/dataset/8
 
-The dataset is provided in **YOLOv8 format**, which includes:
+The dataset is provided in **YOLOv8 format** which includes:
 
 - Training set
 - Validation set
@@ -74,7 +74,7 @@ The dataset is provided in **YOLOv8 format**, which includes:
 - Bounding box annotations
 - Dataset configuration (`data.yaml`)
 
-The original dataset contains **18 traffic sign classes**, including:
+The original dataset contains **18 traffic sign classes** including:
 
 - Bend Left
 - Bend Right
