@@ -60,15 +60,11 @@ traffic-sign-detection-yolo/
 
 # Dataset
 
-This project uses a custom traffic sign dataset downloaded from **Roboflow Universe**.
+This project uses the **Traffic Sign Detection YOLOv8** dataset downloaded from **Roboflow Universe**.
 
 **Dataset Source**
 
-> Replace this section with your dataset URL.
-
-```text
-https://universe.roboflow.com/...
-```
+https://universe.roboflow.com/university-km5u7/traffic-sign-detection-yolov8-awuus/dataset/8
 
 The dataset is provided in **YOLOv8 format**, which includes:
 
@@ -78,19 +74,28 @@ The dataset is provided in **YOLOv8 format**, which includes:
 - Bounding box annotations
 - Dataset configuration (`data.yaml`)
 
-The dataset contains multiple traffic sign categories, including:
+The original dataset contains **18 traffic sign classes**, including:
 
-- Stop
+- Bend Left
+- Bend Right
+- Hump
 - No Entry
 - No Left Turn
-- No Right Turn
 - No Overtaking
-- Speed Limit
+- No Right Turn
+- No Stopping
+- No U Turn
+- No Waiting
 - Parking
-- Roundabout
 - Roadwork
+- Roundabout
+- Speed Limit 40
+- Stop
+- T-Hump
 - Turn Left
 - Turn Right
+
+For this project, the dataset was downloaded in **YOLOv8 format** and organized into the standard YOLO directory structure.
 
 Each image has a corresponding annotation file with normalized bounding box coordinates.
 
@@ -105,10 +110,12 @@ Where:
 | Value | Description |
 |--------|-------------|
 | 0 | Class ID |
-| 0.53 | X center |
-| 0.42 | Y center |
-| 0.18 | Bounding box width |
-| 0.22 | Bounding box height |
+| 0.53 | X center (normalized) |
+| 0.42 | Y center (normalized) |
+| 0.18 | Bounding box width (normalized) |
+| 0.22 | Bounding box height (normalized) |
+
+Although the original dataset contains 18 classes, this project was trained using 15 selected traffic sign classes defined in `data.yaml`.
 
 # Dataset Structure
 
